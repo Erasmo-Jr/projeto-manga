@@ -6,7 +6,7 @@ const setTheme = (mode) => {
     const isDark = mode === 'dark';
     document.body.classList.toggle('dark-mode', isDark);
     if (themeToggle) {
-        themeToggle.textContent = isDark ? 'Modo claro' : 'Modo escuro';
+        themeToggle.textContent = isDark ? '☀️' : '🌙';
     }
     localStorage.setItem(themeStorageKey, mode);
 };
